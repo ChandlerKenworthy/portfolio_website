@@ -1,5 +1,6 @@
 'use client'
 
+import Head from "next/head";
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { IBM_Plex_Mono } from "next/font/google";
@@ -12,6 +13,11 @@ const ibmPlex = IBM_Plex_Mono({
 export default function Header() {
     const pathname = usePathname();
     return (
+        <>
+        <Head>
+            <title>My Portfolio | Data Scientist & Developer</title>
+            <meta name="description" content="Aspiring Data Scientist & Software Developer" />
+        </Head>
         <header className='w-full'>
             <nav className="flex justify-between items-center p-6 bg-gray-900 text-white">
                 <div className={`text-2xl font-bold ${ibmPlex.className}`}>
@@ -33,5 +39,6 @@ export default function Header() {
                 </ul>
             </nav>
         </header>
+        </>
     );
 }
