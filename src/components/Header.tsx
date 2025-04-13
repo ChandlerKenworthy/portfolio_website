@@ -25,16 +25,16 @@ export default function Header() {
                 </div>
                 <ul className="flex items-center space-x-6">
                     <li>
-                        <Link className={pathname === '/about' ? 'text-blue-600 font-semibold' : 'text-white'} href="/about">About</Link>
+                        <Link className={pathname === '/about' ? 'text-blue-400 font-semibold' : 'text-white'} href="/about">About</Link>
                     </li>
                     <li>
-                        <Link className={pathname === '/projects' ? 'text-blue-600 font-semibold' : 'text-white'} href="/projects">Projects</Link>
+                        <Link className={pathname === '/projects' ? 'text-blue-400 font-semibold' : 'text-white'} href="/projects">Projects</Link>
                     </li>
                     <li>
-                        <Link className={pathname === '/contact' ? 'text-blue-600 font-semibold' : 'text-white'} href="/contact">Contact</Link>
+                        <Link className={pathname === '/contact' ? 'text-blue-400 font-semibold' : 'text-white'} href="/contact">Contact</Link>
                     </li>
                     <li className="border-solid border-white rounded-lg border-1 px-4 py-2 hover:bg-gray-700">
-                        <Link className={pathname === '/resume' ? 'text-blue-600 font-semibold' : 'text-white'} href="/resume">Resume</Link>
+                        <Link className={pathname === '/resume' ? 'text-blue-400 font-semibold' : 'text-white'} href="/resume">Resume</Link>
                     </li>
                 </ul>
             </nav>
